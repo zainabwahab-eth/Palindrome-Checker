@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #023047;
+    --primary-color: #FB8500;
+    --secondary-color: #EAE2B7;
+    --text-color-1: #FFFFFF;
+    --text-color-2: #2F2F2F;
+    --input-color: #EAE2B7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    font-family: "IBM plex Mono", san-serif;
+    color: var(--text-color-1);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 40px 0;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#text-input {
+    border: 2px solid var(--input-color);
+    padding: 16px;
+    font-family: "IBM plex Mono", san-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--input-color);
+    background-color: transparent;
+    width: 100%;
+}
+
+#check-btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    padding: 16px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+}
+
+#check-btn:hover {
+    background-image: linear-gradient(#FB8500, #BC6707);
+}
+
+#result {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin: 50px 0;
+    color: var(--text-color-1);
+}
+
+details {
+    background-color: var(--secondary-color);
+    color: var(--text-color-2);
+    padding: 16px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+details>summary {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+details>p {
+    font-weight: 300;
+    padding-top: 12px;
+}
